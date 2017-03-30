@@ -23,7 +23,10 @@ mix.js([
     .styles([
         'resources/build/css/app.css',
         'resources/semantic/dist/semantic.css'
-    ], 'public/css/all.css');
+    ], 'public/css/all.css')
+
+    // Semantic theme
+    .copy('resources/semantic/dist/themes/default', 'public/css/themes/default', false);
 
 if (mix.config.inProduction) {
     mix.version();
