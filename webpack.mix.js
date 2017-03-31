@@ -17,13 +17,12 @@ mix.js([
 ], 'public/js')
 
     // Compile sass
-    .sass('resources/assets/sass/app.scss', 'resources/build/css')
+    .sass('resources/assets/sass/app.scss', 'public/css')
 
     // Combine css
     .styles([
-        'resources/build/css/app.css',
         'resources/semantic/dist/semantic.css'
-    ], 'public/css/all.css')
+    ], 'public/css/vendor.css')
 
     // Semantic theme
     .copy('resources/semantic/dist/themes/default', 'public/css/themes/default', false);
